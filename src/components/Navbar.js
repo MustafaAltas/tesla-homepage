@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useState } from "react";
 import styled from "styled-components";
@@ -105,12 +106,12 @@ function Navbar() {
           <a href="#solarPanels">Solar Panels</a>
         </div>
         <div className="nav-second">
-          <a href="www.google.com">Shop</a>
-          <a href="www.google.com">Account</a>
-          <a href="www.google.com">Menu</a>
+          <a href="#">Shop</a>
+          <a href="#">Account</a>
+          <a href="#">Menu</a>
         </div>
         <div className="nav-third" >
-          <a href="www.google.com" style={{display:`${sideBarIsActive ? "none" : "block"}`}} onClick={handleSideBar}>
+          <a href="#" style={{display:`${sideBarIsActive ? "none" : "block"}`}} onClick={handleSideBar}>
             Menu
           </a>
         </div>
