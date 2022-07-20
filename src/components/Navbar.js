@@ -65,6 +65,10 @@ const Wrapper = styled.div`
   }
 
   @media (max-width: 970px) {
+    .nav{
+      justify-content: space-around;
+      padding-right: 0;
+    }
     .nav-first {
       display: none;
     }
@@ -72,7 +76,7 @@ const Wrapper = styled.div`
       display: none;
     }
     .nav-third {
-      display: flex;
+      display: block;
     }
   }
   @media screen and (min-width: 971px) {
@@ -105,8 +109,8 @@ function Navbar() {
           <a href="www.google.com">Account</a>
           <a href="www.google.com">Menu</a>
         </div>
-        <div className="nav-third">
-          <a href="www.google.com" onClick={handleSideBar}>
+        <div className="nav-third" >
+          <a href="www.google.com" style={{display:`${sideBarIsActive ? "none" : "block"}`}} onClick={handleSideBar}>
             Menu
           </a>
         </div>
